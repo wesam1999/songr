@@ -3,6 +3,7 @@ package com.example.songr.Models;
 
 
 
+//@Entity
 public class AlbumModel {
     private String title;
     private String artist;
