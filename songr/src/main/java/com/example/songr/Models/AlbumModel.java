@@ -4,6 +4,8 @@ package com.example.songr.Models;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.Set;
 
 @Entity
 public class AlbumModel {
@@ -15,6 +17,8 @@ public class AlbumModel {
     private int songCount;
     private int length;
     private String imageUrl;
+    @OneToMany(mappedBy = "albumModel")
+    Set <SongModel> songModels;
 public AlbumModel(){
 
 
