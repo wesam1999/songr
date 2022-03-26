@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Song</title>
+</head>
+<body>
+<ul  th:each="song:${allSong}">
+
+<p>id</p><span th:text="${song.id}"></span>
+<p>title</p><span th:text="${song.title}"></span>
+
+<p>trackNumber</p><span th:text="${song.trackNumber}"></span>
+
+<p>songCount</p><span th:text="${song.songCount}"></span>
+<p>albumModel</p><span th:text="${song.albumModel}"></span>
+</ul>>
+
+</body>
+</html>
