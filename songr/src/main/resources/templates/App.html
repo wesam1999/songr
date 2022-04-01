@@ -9,15 +9,32 @@
     <link rel="stylesheet" href="/file.css">
 </head>
 <body>
-<form action="/album" method="get">
-<p>title</p><input type="text"name="title"/>
-<p>artist</p><input type="text"name="artist"/>
-<p>songCount</p><input type="text"name="songCount"/>
-<p>length</p><input type="text"name="length"/>
-<p>imageUrl</p><input type="text"name="imageUrl"/>
-<button type="submit">submit</button>
+
+
+
+
+<form action="/albums" method="post">
+    <p>title</p><input type="text"name="title"/>
+    <p>artist</p><input type="text"name="artist"/>
+    <p>songCount</p><input type="text"name="songCount"/>
+    <p>length</p><input type="text"name="length"/>
+    <p>imageUrl</p><input type="text"name="imageUrl"/>
+    <button type="submit">submit</button>
 </form>
 
+<ul th:each="album : ${allAlbum}">
+    <p>id</p><span th:text="${album.id}"></span>
+
+
+    <p>artist</p><span th:text="${album.artist}"></span>
+    <p>imageUrl</p><span th:text="${album.imageUrl}"></span>
+    <p>length</p><span th:text="${album.length}"></span>
+    <p>songCount</p><span th:text="${album.songCount}"></span>
+    <p>title</p><span th:text="${album.title}"></span>
+<!--    <p>songModels</p><span th:text="${album.songModels}"></span>-->
+<!--    <p>songModels</p><span th:text="${album.songModels}"></span>-->
+    <p>**********************************************************</p>
+</ul>
 
 </body>
 </html>

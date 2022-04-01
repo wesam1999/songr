@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>allSong</title>
 </head>
 <body>
-<form action="/songs" method="get">
+
+
+<form action="/songs" method="post">
     <p>title</p><input type="text"name="title"/>
-    <p>artist</p><input type="text"name="trackNumber"/>
-    <p>songCount</p><input type="text"name="songCount"/>
     <p>length</p><input type="text"name="length"/>
-    <p>imageUrl</p><input type="text"name="albumModel"/>
+    <p>trackNumber</p><input type="text"name="trackNumber"/>
+
     <button type="submit">submit</button>
 </form>
+
+<ul th:each="song : ${allSong}">
+    <p>id</p><span th:text="${song.id}"></span>
+    <p>length</p><span th:text="${song.length}"></span>
+    <p>title</p><span th:text="${song.title}"></span>
+    <p>trackNumber</p><span th:text="${song.trackNumber}"></span>
+    <p> album_model_id</p><span th:text="${song.albumModel}"></span>
+
+    <p>**********************************************************</p>
+</ul>
+
 </body>
 </html>
