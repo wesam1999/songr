@@ -38,6 +38,8 @@ public AlbumModel(){
         this.songCount = songCount;
         this.length = length;
         this.imageUrl = imageUrl;
+
+
     }
 
     public String getTitle() {

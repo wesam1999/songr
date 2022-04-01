@@ -14,12 +14,20 @@ public class SongModel {
     private int length;
     private int trackNumber;
     @ManyToOne
-    private AlbumModel albumModel;
+    AlbumModel albumModel;
 
     public SongModel(String title, int length, int trackNumber) {
         this.title = title;
         this.length = length;
         this.trackNumber = trackNumber;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -44,5 +52,13 @@ public class SongModel {
 
     public void setTrackNumber(int trackNumber) {
         this.trackNumber = trackNumber;
+    }
+
+    public AlbumModel getAlbumModel() {
+        return albumModel;
+    }
+
+    public void setAlbumModel(AlbumModel albumModel) {
+        this.albumModel = albumModel;
     }
 }
