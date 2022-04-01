@@ -1,12 +1,15 @@
 # songr
 
-I create a hello page  /hello, to  ensure that you can visit that route in your browser and see a rendered template come back.<br />
-I Create a route that turns words into UPPER CASE. For instance, I should be able to visit /capitalize/hello and get back an HTML page containing the response HELLO, or I could visit /capitalize/this is Kinda Capitalized and get an HTML page containing the response THIS IS KINDA CAPITALIZED.
-
-I Create a basic splash page for the Songr app  "/",that is ha<br /> 
-
-Create an Album class to act as a model in our app.<br />
-
-An Album has a title, an artist, a songCount, a length (in seconds), and an imageUrl that is a link to that album’s art.<br />
-
-Create a route at /albums that shows three album instances. (These will be hardcoded for today’s lab; create an array that contains three albums, and then display those three on the page.)<br />
+my we site should used to add new song to album and add 
+songs to albums  create new username and password and log in .<br />
+when you like to visit the page  should inter URL 
+(localhost:8080/)to go to the main page .<br />
+if you like to add or to see all the album  you should 
+click in the link (album)in the main page .<br />
+if you link to go to the song page to add or see all 
+song in the page you should click on link( song)in the main page .<br />
+if you like to add album you should see text file 
+for inter the title and artist and songCount and length
+and imageURL then click on the button subment.<br />
+if you like to add song you should see text file for inter 
+the title and legth and trackNumber  then click on the button subment.<br />
