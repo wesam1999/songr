@@ -1,10 +1,10 @@
 package com.example.songr.controller;
 
-import com.example.songr.Models.AlbumModel;
+
 import com.example.songr.Models.SongModel;
 import com.example.songr.Repositries.SongRepostitries;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.web.servlet.error.ErrorController;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,6 +23,13 @@ public class SongController  {
         songRepostitries.save(songModel);
         return new RedirectView("song");
     }
+//    @GetMapping("/song/{id}")
+//    public String onesong(Model model){
+//        System.out.println("*************************************************************");
+//
+//        model.addAttribute("idSong",songRepostitries.findById(id));
+//        return "App2";
+//    }
 
     @GetMapping("/song")
     public String Song(Model model){
